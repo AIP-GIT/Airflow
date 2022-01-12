@@ -3,7 +3,9 @@
 cd Airflow/app1
 ## Run following command
 echo -e "AIRFLOW_UID=$(id -u)" > .env
+
 docker-compose up airflow-init
+
 docker-compose up -d
 ## check if docker is up and running
 docker ps
